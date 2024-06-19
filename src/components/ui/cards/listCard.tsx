@@ -17,11 +17,11 @@ export default function ListCard(props: ListCardProps) {
                             <li className="py-3 sm:py-4">
                                 <div className="flex items-center space-x-4">
                                     <div className="flex-shrink-0">
-                                        <img className="w-8 h-8 rounded-full" src={we.logo || 'https://avatars.githubusercontent.com/u/56881629?s=40&v=4'} alt="" />
+                                        <img className="w-8 h-8 rounded-full" src={we.logo || "https://avatars.githubusercontent.com/u/56881629?s=40&v=4"} alt="" />
                                     </div>
                                     <div className="">
                                         <p className="ml-5 text-left font-medium dark:text-white">
-                                            {we.company} • {we.fromDate.getFullYear()} - {we.toDate ? we.toDate.getFullYear() : 'now'}
+                                            {we.company} • {we.fromDate.getFullYear()} - {we.toDate ? we.toDate.getFullYear() : "now"}
                                         </p>
                                         <p className="text-sm ml-5 text-left text-gray-400 dark:text-gray-400">
                                             {we.title}
@@ -35,7 +35,7 @@ export default function ListCard(props: ListCardProps) {
                                 <li className="py-3 sm:py-4">
                                 <div className="flex items-center space-x-4">
                                     <div className="flex-shrink-0">
-                                        <img className="w-8 h-8 rounded-full" src={e.image || 'https://avatars.githubusercontent.com/u/56881629?s=40&v=4'} alt="" />
+                                        <img className="w-8 h-8 rounded-full" src={e.image || "https://avatars.githubusercontent.com/u/56881629?s=40&v=4"} alt="" />
                                     </div>
                                     <div className="">
                                         <p className="ml-5 text-left font-medium dark:text-white">
@@ -53,7 +53,7 @@ export default function ListCard(props: ListCardProps) {
                                 <li className="py-3 sm:py-4">
                                 <div className="flex items-center space-x-4">
                                     <div className="flex-shrink-0">
-                                        <img className="w-8 h-8 rounded-full" src={achievement.thumbnail || 'https://avatars.githubusercontent.com/u/56881629?s=40&v=4'} alt="" />
+                                        <img className="w-8 h-8 rounded-full" src={achievement.thumbnail || "https://avatars.githubusercontent.com/u/56881629?s=40&v=4"} alt="" />
                                     </div>
                                     <div className="">
                                         <p className="text-sm ml-5 text-left text-gray-400 dark:text-gray-400">

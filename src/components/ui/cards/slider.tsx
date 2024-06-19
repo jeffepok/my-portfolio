@@ -1,10 +1,10 @@
 "use client"
 
-import React from 'react';
-import { Carousel } from 'react-responsive-carousel';
+import React from "react";
+import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import Slide from './slide';
-import { projects } from '@/app/lib/placeholder-data';
+import Slide from "./slide";
+import { projects } from "@/app/lib/placeholder-data";
 
 
 const MultiItemCarousel: React.FC = () => {

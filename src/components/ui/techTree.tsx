@@ -1,5 +1,5 @@
 // TechTree.tsx
-import React from 'react';
+import React from "react";
 
 interface TechTreeItem {
     name: string;
@@ -15,7 +15,7 @@ const TechTree: React.FC<TechTreeProps> = ({ items }) => {
         <div className="flex flex-col items-center">
             <h2 className="text-3xl font-bold">Tech Stack
             </h2>
-            <p className="text-lg text-green-500">I'm specialized in web development</p>
+            <p className="text-lg text-green-500">I"m specialized in web development</p>
             <div className="mt-5 space-y-4 w-full">
                 <table className="w-full border-collapse border border-slate-400">
                     <thead>

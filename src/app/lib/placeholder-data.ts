@@ -96,19 +96,19 @@ export const projects: Project[] = [
 ]
 
 export const techItems = [
-    { name: 'Django, django CMS', level: 9 },
-    { name: 'Python', level: 9 },
-    { name: 'Go lang', level: 5 },
-    { name: 'JavaScript', level: 9 },
-    { name: 'React, Redux', level: 8 },
-    { name: 'HTML & Email', level: 8 },
-    { name: 'CSS & Sass', level: 6 },
-    { name: 'ES6 & Typescript', level: 6 },
-    { name: 'GraphQL, Rest', level: 8 },
-    { name: 'Node, Webpack', level: 8 },
-    { name: 'Express', level: 7 },
-    { name: 'Docker, Kubernetes', level: 5 },
-    { name: 'Cloud, GCP', level: 4 },
-    { name: 'Adobe', level: 3 },
+    { name: "Django, django CMS", level: 9 },
+    { name: "Python", level: 9 },
+    { name: "Go lang", level: 5 },
+    { name: "JavaScript", level: 9 },
+    { name: "React, Redux", level: 8 },
+    { name: "HTML & Email", level: 8 },
+    { name: "CSS & Sass", level: 6 },
+    { name: "ES6 & Typescript", level: 6 },
+    { name: "GraphQL, Rest", level: 8 },
+    { name: "Node, Webpack", level: 8 },
+    { name: "Express", level: 7 },
+    { name: "Docker, Kubernetes", level: 5 },
+    { name: "Cloud, GCP", level: 4 },
+    { name: "Adobe", level: 3 },
   ];
   

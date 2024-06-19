@@ -1,11 +1,11 @@
 "use client"
 
-import React, { Fragment } from 'react'
-import { Menu, MenuButton, MenuItem, MenuItems, Transition } from '@headlessui/react'
+import React, { Fragment } from "react"
+import { Menu, MenuButton, MenuItem, MenuItems, Transition } from "@headlessui/react"
 import { BsChevronDown, BsHouseFill, BsGithub, BsTwitter, BsFacebook, BsLinkedin } from "react-icons/bs"
 import Typist from "react-typist"
-import { usePathname } from 'next/navigation'
-import Link from 'next/link'
+import { usePathname } from "next/navigation"
+import Link from "next/link"
 
 const menus = [
     {
@@ -62,7 +62,7 @@ function Navbar() {
                                 {
                                     menus.map((menu) => {
                                         return menu.path !== currentPage && <MenuItem>
-                                            <a href={menu.path} className='data-[focus]:bg-gray-300 block w-full px-2 pt-1 my-1'>
+                                            <a href={menu.path} className="data-[focus]:bg-gray-300 block w-full px-2 pt-1 my-1">
                                                 {menu.label}
                                             </a>
                                         </MenuItem>

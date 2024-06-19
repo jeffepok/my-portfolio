@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'cascadia-code';
-  src: local('cascadia-code'), url(/fonts/cascadia-code/Cascadia.ttf) format('truetype');
+  font-family: "cascadia-code";
+  src: local("cascadia-code"), url(/fonts/cascadia-code/Cascadia.ttf) format("truetype");
 }
 
 .App {
@@ -12,5 +12,5 @@
 }
 
 body {
-  font-family: 'cascadia-code';
+  font-family: "cascadia-code";
 }
