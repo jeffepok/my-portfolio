@@ -13,8 +13,8 @@ export default function ListCard(props: ListCardProps) {
                 <p className="text-left text-xl">{props.title}</p>
                 <ul className=" dark:divide-gray-700">
                     {
-                        props.title === "Work Experience" ? workExperiences.sort((a, b) => (a.fromDate > b.fromDate ? - 1 : 1)).map(we => (
-                            <li className="py-3 sm:py-4">
+                        props.title === "Work Experience" ? workExperiences.sort((a, b) => (a.fromDate > b.fromDate ? - 1 : 1)).map((we, index) => (
+                            <li key={`we_` + index} className="py-3 sm:py-4">
                                 <div className="flex items-center space-x-4">
                                     <div className="flex-shrink-0">
                                         <img className="w-8 h-8 rounded-full" src={we.logo || "https://avatars.githubusercontent.com/u/56881629?s=40&v=4"} alt="" />
@@ -31,8 +31,8 @@ export default function ListCard(props: ListCardProps) {
                                 </div>
                             </li>
                         )) : props.title === "Education" ?
-                            educations.sort().map(e => (
-                                <li className="py-3 sm:py-4">
+                            educations.sort().map((e, index) => (
+                                <li key={`education_` + index} className="py-3 sm:py-4">
                                 <div className="flex items-center space-x-4">
                                     <div className="flex-shrink-0">
                                         <img className="w-8 h-8 rounded-full" src={e.image || "https://avatars.githubusercontent.com/u/56881629?s=40&v=4"} alt="" />
@@ -49,8 +49,8 @@ export default function ListCard(props: ListCardProps) {
                                 </div>
                             </li>
                             ))
-                            : achievements.map(achievement => (
-                                <li className="py-3 sm:py-4">
+                            : achievements.map((achievement, index) => (
+                                <li key={`achievement_` + index} className="py-3 sm:py-4">
                                 <div className="flex items-center space-x-4">
                                     <div className="flex-shrink-0">
                                         <img className="w-8 h-8 rounded-full" src={achievement.thumbnail || "https://avatars.githubusercontent.com/u/56881629?s=40&v=4"} alt="" />

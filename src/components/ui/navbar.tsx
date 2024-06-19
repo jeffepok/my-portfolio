@@ -60,8 +60,8 @@ function Navbar() {
                         >
                             <MenuItems className="absolute bg-white w-28 rounded-md mt-2">
                                 {
-                                    menus.map((menu) => {
-                                        return menu.path !== currentPage && <MenuItem>
+                                    menus.map((menu, index) => {
+                                        return menu.path !== currentPage && <MenuItem key={index}>
                                             <a href={menu.path} className="data-[focus]:bg-gray-300 block w-full px-2 pt-1 my-1">
                                                 {menu.label}
                                             </a>

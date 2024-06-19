@@ -22,7 +22,7 @@ const MultiItemCarousel: React.FC = () => {
         showStatus={false}
       >
         {projects.map((p, index) => (
-          <Slide project={p} key={index}/>
+          <Slide project={p} key={`project_` + index}/>
         ))}
       </Carousel>
     </div>
