@@ -39,11 +39,18 @@ export const educations: Education[] = [
     },
     {
         institution: "Blossom Academy",
-        program: "Bsc. Computer Science",
+        program: "Data Engineering",
         fromDate: new Date(2019, 1, 1),
         toDate: new Date(2020, 1, 1),
         image: "https://blossom.africa/wp-content/uploads/2022/06/cropped-blossomlog-32x32.png"
-    }
+    },
+    {
+        institution: "Amalitech Training Academy",
+        program: "Software Engineering",
+        fromDate: new Date(2019, 1, 1),
+        toDate: new Date(2020, 1, 1),
+        image: "https://amalitech-testing.amalitech-dev.net/wp-content/uploads/2023/05/amali-services-01-e1587997109319-300x281-1.png"
+    },
 ]
 
 export const aboutMe = `
