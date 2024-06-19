@@ -1,29 +1,12 @@
-import BoyImage from "@/app/assets/images/boy.png"
-// Import Swiper React components
-import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import Image from "next/image"
-
-
 import ListCard from "@/components/ui/cards/listCard"
-import Slide from "@/components/ui/cards/slide"
 import MultiItemCarousel from "@/components/ui/cards/slider";
-import { aboutMe } from "../lib/placeholder-data";
+import { aboutMe, techItems } from "../lib/placeholder-data";
+import TechTree from "@/components/ui/techTree";
 
 // import required modules
 
 export default function About() {
-    // Create array with 1000 slides
-    const slides = Array.from({ length: 10 }).map(
-        (el, index) => `Slide ${index + 1}`
-    )
-
-    const pagination = {
-        clickable: true,
-        renderBullet: function (index: number, className: string) {
-            return '<span class="' + className + '"> </span>'
-        },
-    };
     return (
         <>
             <main className="text-white container mx-auto px-16 xl:px-32 mt-28">
@@ -53,7 +36,7 @@ export default function About() {
                         <img className="w-100 h-100" src="/images/boy_education.png"/>
                     </div>
                 </div>
-                <div className="grid mt-32 mb-10 pb-6 grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="grid mb-10 pb-6 grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="w-96 justify-end">
                         <img className="w-100 h-100" src="/images/boy_professional.png" alt="boy"/>
                     </div>
@@ -79,6 +62,12 @@ export default function About() {
                 </div>
             </div>
 
+
+            <div className="grid text-white relative pb-28 bg-[#131d27] grid-cols-1 gap-4">
+                <div className="lg:mx-32">
+                    <TechTree items={techItems}/>
+                </div>
+            </div>
 
         </>
     )

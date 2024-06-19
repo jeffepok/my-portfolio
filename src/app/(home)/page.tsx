@@ -2,7 +2,7 @@ import React from 'react';
 import {FiMoreHorizontal} from 'react-icons/fi';
 
 const Home = () => {
-  return <main className="text-white container mx-auto px-16 xl:px-32 mt-28">
+  return <main className="text-white container mx-auto px-16 xl:px-32 mt-28 h-screen">
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
       <div className='h-full'>
         <div className="text-4xl text-left">

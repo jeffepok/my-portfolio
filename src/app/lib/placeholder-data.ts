@@ -1,4 +1,4 @@
-import { Achiemement, Education, WorkExperience } from "./interfaces";
+import { Achiemement, Education, Project, WorkExperience } from "./interfaces";
 
 export const workExperiences: WorkExperience[] = [
     {
@@ -64,3 +64,51 @@ export const achievements: Achiemement[] = [
         description: "Founder of Pentabyte, parent company of a number of SaaS products"
     }
 ]
+
+export const projects: Project[] = [
+    {
+        title: "MyFluence",
+        description: "",
+        imageUrl: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1212,h=992,fit=crop/m7VqRKlKZaukW67g/_mg_0457-AR0eQBEvJVu39B9B.jpg",
+        stack: [
+            "Python",
+            "Django"
+        ]
+    },
+    {
+        title: "DukaAssets",
+        description: "",
+        imageUrl: "https://storage.googleapis.com/msys-dukaassetswebsite-prod-content/media/filer_public_thumbnails/filer_public/9f/37/9f378513-cad0-4078-90a2-3d11b20bd43f/home.png__3585.0x3584.0_subsampling-2.png",
+        stack: [
+            "Python",
+            "Django"
+        ]
+    },
+    {
+        title: "GMA Appointment Portal",
+        description: "",
+        imageUrl: "/images/gma_portal.png",
+        stack: [
+            "Python",
+            "Django",
+        ]
+    }
+]
+
+export const techItems = [
+    { name: 'Django, django CMS', level: 9 },
+    { name: 'Python', level: 9 },
+    { name: 'Go lang', level: 5 },
+    { name: 'JavaScript', level: 9 },
+    { name: 'React, Redux', level: 8 },
+    { name: 'HTML & Email', level: 8 },
+    { name: 'CSS & Sass', level: 6 },
+    { name: 'ES6 & Typescript', level: 6 },
+    { name: 'GraphQL, Rest', level: 8 },
+    { name: 'Node, Webpack', level: 8 },
+    { name: 'Express', level: 7 },
+    { name: 'Docker, Kubernetes', level: 5 },
+    { name: 'Cloud, GCP', level: 4 },
+    { name: 'Adobe', level: 3 },
+  ];
+  
