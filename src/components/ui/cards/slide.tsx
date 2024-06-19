@@ -4,9 +4,9 @@ import { Project } from "@/app/lib/interfaces"
 
 export default function Slide({ project }: { project: Project }) {
     return (
-        <div className="max-w-sm h-full flex flex-col space-y-5 max-h-full rounded overflow-hidden shadow-lg w-full bg-[#182533]">
+        <div className="max-w-sm h-full flex flex-col max-h-full rounded overflow-hidden shadow-lg w-full bg-[#182533]">
             <img className="w-full" src={project.imageUrl || ""} />
-            <div className="">
+            <div className="mt-auto">
                 <div className="px-6 py-4">
                     <div className="font-bold text-xl mb-2">{project.title}</div>
                     <p className="text-[#94afc7]  text-base">

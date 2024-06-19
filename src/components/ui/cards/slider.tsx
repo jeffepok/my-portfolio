@@ -8,8 +8,11 @@ import { projects } from '@/app/lib/placeholder-data';
 
 
 const MultiItemCarousel: React.FC = () => {
+  const divStyle = {
+    maxHeight: "500px"
+  }
   return (
-    <div className="w-full mx-auto py-8">
+    <div className="w-full mx-auto py-8" style={divStyle}>
       <Carousel
         showArrows
         infiniteLoop
