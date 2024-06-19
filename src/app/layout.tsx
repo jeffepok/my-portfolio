@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className="App bg-[#182533] font-cascadia-code">
+        <div className="App bg-[#182533] font-cascadia-code flex flex-col h-full">
           <Navbar/>
           {children}
         </div>
