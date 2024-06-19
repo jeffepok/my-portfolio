@@ -54,7 +54,7 @@ export const educations: Education[] = [
 ]
 
 export const aboutMe = `
-I grew up in a Kumasi a city in Ghana with my parents. Tech was not developed during my early age so no one really motivated me to pursue a career in Tech.
+I grew up in Kumasi a city in Ghana with my parents. Tech was not developed during my early age so no one really motivated me to pursue a career in Tech.
 However I was driven by passion to solve problems with Software
 `
 
