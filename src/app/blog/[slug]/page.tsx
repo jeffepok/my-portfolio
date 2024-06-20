@@ -1,18 +1,16 @@
 import React from "react";
-import { ComponentProps } from "react";
 import { builder } from "@builder.io/sdk";
-import { RenderBuilderContent } from "@/components/builder";
-import Head from "next/head";
-import { BuilderComponent } from "@builder.io/react";
 import { getPrettyDate } from "@/app/lib/utils";
 import { FiMoreHorizontal } from "react-icons/fi";
 
 // Replace with your Public API Key
 builder.init((process.env.NEXT_PUBLIC_BUILDER_API_KEY!));
 
-type BuilderPageProps = ComponentProps<typeof BuilderComponent>;
-
-export default async function BlogArticle(props: BuilderPageProps) {
+interface PathnameDisplayProps {
+    pathname: string;
+}
+  
+export default async function BlogArticle({ params }: { params: { slug: string } }) {
     const model = "blog-article";
     const content = await builder
         .get("blog-article", {
@@ -21,7 +19,7 @@ export default async function BlogArticle(props: BuilderPageProps) {
             options: { includeRefs: true },
             query: {
                 // Get the specific article by handle
-                "data.handle": props.location?.pathname,
+                "data.handle": params.slug,
             },
         })
         .toPromise();
