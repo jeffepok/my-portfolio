@@ -48,7 +48,7 @@ const Home = async () => {
             I have 5 years of professional experience, an expert in building robust and scalable mobile and web applications in Python, Django, React, Node.js, and Flutter.
           </p>
           <p className="text-sm pt-7 text-gray-400">
-            I&apos;m working at Overloop LTD., where I offer software engineering services to it&quots; clients in the U.S.
+            I&apos;m working at Overloop LTD., where I offer software engineering services to it&apos;s clients in the U.S.
           </p>
 
         </div>
