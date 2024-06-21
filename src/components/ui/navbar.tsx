@@ -19,6 +19,10 @@ const menus = [
     {
         "label": "Contact",
         "path": "/contact"
+    },
+    {
+        "label": "Blog",
+        "path": "/blog"
     }
 ]
 function Navbar() {
