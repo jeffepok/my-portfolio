@@ -1,0 +1,4 @@
+li {
+    list-style-type: disc; /* Add bullet points */
+    margin-left: 1.5rem; /* Add left margin to indent the list items */
+  }

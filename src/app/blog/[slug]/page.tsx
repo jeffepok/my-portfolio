@@ -2,6 +2,7 @@ import React from "react";
 import { builder } from "@builder.io/sdk";
 import { getPrettyDate } from "@/app/lib/utils";
 import { FiMoreHorizontal } from "react-icons/fi";
+import './styles.css';
 
 // Replace with your Public API Key
 builder.init((process.env.NEXT_PUBLIC_BUILDER_API_KEY!));
@@ -32,7 +33,7 @@ export default async function BlogArticle({ params }: { params: { slug: string }
             </div>
             <div
                 dangerouslySetInnerHTML={{ __html: content.data.content }}
-                className="text-white bg-[#15212d] w-3/4 py-10 px-20 mx-auto border border-transparent border-t-2 border-t-teal-300">
+                className="text-white text-left bg-[#15212d] w-3/4 py-10 px-20 mx-auto border border-transparent border-t-2 border-t-teal-300">
             </div>
             <div className="text-center mt-10 text-gray-400 mb-20">
                 <a href={`/blog`}>Back to Overview<FiMoreHorizontal className="mx-auto" /></a>
