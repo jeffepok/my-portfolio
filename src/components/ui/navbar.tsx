@@ -26,12 +26,17 @@ const menus = [
     }
 ]
 function Navbar() {
-    const currentPage = usePathname()
+    let currentPage = usePathname()
+    for(let menu of menus){
+        if (currentPage.includes(menu.path) && menu.path != "/"){
+            currentPage = menu.path
+        }
+    }
 
     return (
         <div className="mb-11">
             <nav
-                className="z-20 sticky top-0 px-2 grid grid-cols-3 items-center bg-gray-300 mb-3">
+                className="z-20 sticky top-0 px-2 grid grid-cols-2 md:grid-cols-3 items-center bg-gray-300 mb-3">
                 <div className="flex">
                     <div
                         className="rounded-t-md relative bg-white mt-1 pl-3 pr-14">
@@ -79,7 +84,7 @@ function Navbar() {
                     </Menu>
 
                 </div>
-                <div>
+                <div className="hidden md:block">
                     <Link href="/">Software Engineer</Link>
                 </div>
                 <div className="flex flex-row-reverse">

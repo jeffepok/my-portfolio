@@ -9,7 +9,7 @@ import TechTree from "@/components/ui/techTree";
 export default function About() {
     return (
         <>
-            <main className="text-white container mx-auto px-16 xl:px-32 mt-28">
+            <main className="text-white px-4 xl:px-32 mt-28">
                 <div className="grid grid-cols-1 gap-4">
                     <p className="text-4xl">Explore My Profile</p>
                     <p className="mt-2 text-green-400 text-xl">I live in Kumasi - Ghana and work for Overloop LTD.</p>
@@ -57,7 +57,7 @@ export default function About() {
             <div className="grid pt-12 text-white relative pb-28 bg-[#131d27] grid-cols-1 gap-4">
                 <p className="text-4xl">Projects I’ve worked on</p>
                 <p className="mt-2 text-green-400 text-xl">I have been featured on diverse projects by different companies.</p>
-                <div className="lg:mx-32">
+                <div className="mx-2 lg:mx-32">
                     <MultiItemCarousel/>
                 </div>
             </div>

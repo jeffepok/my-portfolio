@@ -1,23 +1,25 @@
 "use client"
 
-import React from "react";
+import React, { useEffect } from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Slide from "./slide";
 import { projects } from "@/app/lib/placeholder-data";
+import useMediaQuery from "./useMediaQuery";
 
 
 const MultiItemCarousel: React.FC = () => {
+  const isLargeScreen = useMediaQuery('(min-width: 1024px)');
   const divStyle = {
     maxHeight: "500px"
   }
   return (
-    <div className="w-full mx-auto py-8" style={divStyle}>
+    <div className="py-8 w-full h-full" style={divStyle}>
       <Carousel
         showArrows
         infiniteLoop
         centerMode
-        centerSlidePercentage={34.33}
+        centerSlidePercentage={isLargeScreen ? 33.33 : 100}
         showThumbs={false}
         showStatus={false}
       >
