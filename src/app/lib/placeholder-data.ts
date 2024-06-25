@@ -107,6 +107,19 @@ export const projects: Project[] = [
             "HTML",
             "CSS"
         ]
+    },
+    
+    {
+        title: "Funnelleasing",
+        description: "",
+        imageUrl: "/images/funnelleasing.jpg",
+        stack: [
+            "Python",
+            "Django",
+            "React",
+            "Golang",
+            "FastApi"
+        ]
     }
 ]
 
