@@ -120,6 +120,16 @@ export const projects: Project[] = [
             "Golang",
             "FastApi"
         ]
+    },
+    {
+        title: "KorbCloud",
+        description: "",
+        imageUrl: "/images/funnelleasing.jpg",
+        stack: [
+            "NextJs",
+            "Flutter",
+            "NodeJs"
+        ]
     }
 ]
 
