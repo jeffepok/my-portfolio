@@ -124,7 +124,7 @@ export const projects: Project[] = [
     {
         title: "KorbCloud",
         description: "",
-        imageUrl: "/images/funnelleasing.jpg",
+        imageUrl: "/images/korb.png",
         stack: [
             "NextJs",
             "Flutter",
