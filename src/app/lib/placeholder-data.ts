@@ -112,7 +112,7 @@ export const projects: Project[] = [
     {
         title: "Funnelleasing",
         description: "",
-        imageUrl: "/images/funnelleasing.jpg",
+        imageUrl: "/images/funnelleasing.png",
         stack: [
             "Python",
             "Django",
