@@ -279,7 +279,7 @@ export default function Terminal() {
     };
 
     // -------- commands --------
-    type CommandHandler = (args: string[]) => void | Promise<void>;
+    type CommandHandler = (args: string[]) => unknown | Promise<unknown>;
     const COMMANDS: Record<string, { desc: string; run: CommandHandler }> = {
       help: {
         desc: "show available commands",
@@ -525,7 +525,7 @@ export default function Terminal() {
         desc: "read a file",
         run: (args) => {
           const f = (args[0] || "").toLowerCase();
-          const map: Record<string, () => void | Promise<void>> = {
+          const map: Record<string, () => unknown | Promise<unknown>> = {
             "about.md":       () => COMMANDS.about.run([]),
             "experience.log": () => COMMANDS.experience.run([]),
             "skills.json":    () => COMMANDS.skills.run([]),
